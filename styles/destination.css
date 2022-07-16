@@ -1,0 +1,136 @@
+@import "modul.css";
+
+.content-wrap {
+  background-image: url(../imgs/destination/background-destination-desktop.jpg);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  grid-template-rows: 8rem 1fr;
+  column-gap: 2rem;
+  margin: 0 13vw;
+}
+
+.multipage-heading {
+  color: var(--main_text_color);
+}
+
+main img {
+  display: block;
+  grid-column: 1/2;
+  width: 20rem;
+}
+
+.description {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  color: var(--main_text_color);
+}
+
+.description ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+.description ul li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.description ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--main_text_color);
+  display: block;
+  transition: 0.2s ease-in;
+}
+.description ul li:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--main_text_color);
+  display: block;
+}
+
+.description h2 {
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+.description-values {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-top: 1px white solid;
+  padding-top: 1rem;
+   margin-right: 2rem;
+}
+.description-values p {
+  margin: .5rem 0;
+}
+
+@media only screen and (max-width: 1020px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .multipage-heading {
+    align-self: flex-start;
+  }
+
+  main img {
+    margin: 1rem 0;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #description-paragraph {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .description-values {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .description-values-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .description-values-value p {
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .description-values {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .multipage-heading {
+    font-size: 1.2rem;
+  }
+  .description-values {
+    width: 100%;
+  }
+  .description- values-value h4 {
+    font-size: 0.8rem;
+  }
+}

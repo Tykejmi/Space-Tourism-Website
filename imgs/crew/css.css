@@ -1,0 +1,39 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+.wrap{
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.one{background-color: brown;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    }
+.two{background-color: green;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.three{background-color: yellow;
+    grid-column: 1/2;
+    grid-row: 3/4;}
+
+.four{background-color: orange;
+    grid-column: 2/3;
+    grid-row: 1/-1;
+}

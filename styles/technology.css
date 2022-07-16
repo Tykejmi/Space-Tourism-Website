@@ -1,0 +1,117 @@
+@import url("modul.css");
+
+.content-wrap {
+  background-image: url("../imgs/technology/background-technology-desktop.jpg");
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5rem 5rem 1fr;
+  color: var(--main_text_color);
+  margin-left: 13vw;
+}
+.multipage-header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.description {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+}
+
+.btns {
+  list-style: none;
+  padding: 0;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.7rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.btn:hover {
+  background-color: var(--main_text_color);
+  color: black;
+}
+
+.description-text {
+  margin-left: 3rem;
+  font-size: 1rem;
+}
+.description-text h4 {
+  text-transform: uppercase;
+  color: gray;
+  font-weight: 100;
+  font-size: 1rem;
+}
+.description-text h2 {
+  text-transform: uppercase;
+  color: var(--main_text_color);
+  font-weight: 100;
+  font-size: 2.5rem;
+  margin: 0.5rem 0 1rem 0;
+}
+.description-text p {
+  max-width: 75%;
+}
+
+.description-img {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  justify-self: end;
+  width: 27rem;
+  height: 23rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .multipage-heading {
+    order: 1;
+    align-self: flex-start;
+    margin-left: 13vw;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+  }
+  .description-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  #description-text-p {
+    text-align: center;
+  }
+  .btns {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    margin: 0 1.5rem;
+  }
+  .description-img {
+    order: 2;
+    width: 100%;
+    min-height: 15rem;
+  }
+}
