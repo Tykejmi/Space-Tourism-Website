@@ -28,26 +28,18 @@ const TECHNOLOGY = [
   },
 ];
 
-let btns = document.querySelectorAll(".btn");
-let descImg = document.querySelector(".description-img");
-let descSecondHeading = document.querySelector("#description-text-h2");
-let descParagraph = document.querySelector("#description-text-p");
+const BTNS = document.querySelectorAll(".btn");
+const DESCRIPTION_IMG = document.querySelector(".description-img");
+const DESCRIPTION_H2 = document.querySelector("#description-text-h2");
+const DESCRIPTION_P = document.querySelector("#description-text-p");
 
 
 
-btns.forEach((btn, i) =>{
+BTNS.forEach((btn, i) =>{
   btn.addEventListener("click",() => {
-    descSecondHeading.innerText = TECHNOLOGY[i].name;
-    descParagraph.innerText = TECHNOLOGY[i].description;
-    descImg.src = TECHNOLOGY[i].images.portrait;
+    DESCRIPTION_H2.innerText = TECHNOLOGY[i].name;
+    DESCRIPTION_P.innerText = TECHNOLOGY[i].description;
+    DESCRIPTION_IMG.src = TECHNOLOGY[i].images.portrait;
   });
 })
 
-
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    descSecondHeading.innerText = TECHNOLOGY[i].name;
-    descParagraph.innerText = TECHNOLOGY[i].description;
-    descImg.src = TECHNOLOGY[i].images.portrait;
-  });
-}

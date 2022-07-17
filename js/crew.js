@@ -37,26 +37,26 @@ const CREW = [
   },
 ];
 
-let buttons = document.querySelectorAll(".description-button");
-let descriptionTitle = document.querySelector("#description-title");
-let descriptionName = document.querySelector("#description-name");
-let descriptionParagraph = document.querySelector("#description-paragraph");
-let memberPhoto = document.querySelector("#member-photo");
+const BTNS = document.querySelectorAll(".description-button");
+const DESCRIPTION_TITLE = document.querySelector("#description-title");
+const DESCRIPTION_NAME = document.querySelector("#description-name");
+const DESCRIPTION_P = document.querySelector("#description-paragraph");
+const MEMBER_PHOTO = document.querySelector("#member-photo");
 
-buttons.forEach((button, i) => {
+BTNS.forEach((button, i) => {
   button.addEventListener("click", () => {
     removeActiveState();
 
-    descriptionTitle.innerText = CREW[i].role;
-    descriptionName.innerText = CREW[i].name;
-    descriptionParagraph.innerText = CREW[i].bio;
-    memberPhoto.src = CREW[i].images.png;
+    DESCRIPTION_TITLE.innerText = CREW[i].role;
+    DESCRIPTION_NAME.innerText = CREW[i].name;
+    DESCRIPTION_P.innerText = CREW[i].bio;
+    MEMBER_PHOTO.src = CREW[i].images.png;
     button.classList.add("btn-active");
   });
 });
 
 function removeActiveState() {
-  buttons.forEach((button) => {
+  BTNS.forEach((button) => {
     button.classList.remove("btn-active");
   });
 }

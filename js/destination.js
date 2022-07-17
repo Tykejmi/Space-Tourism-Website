@@ -44,22 +44,23 @@ const DESTINATIONS = [
     travel: "7 years",
   },
 ];
-let descriptionButtons = document.querySelectorAll(".description-button");
-let planetPicture = document.querySelector("#planet-picture");
-let planetHeading = document.querySelector("#description-heading");
-let planetParagraph = document.querySelector("#description-paragraph");
-let planetDistance = document.querySelector("#distance");
-let planetTime = document.querySelector("#time");
+
+const DESCRIPTION_BTNS = document.querySelectorAll(".description-button");
+const PLANET_PICTURE = document.querySelector("#planet-picture");
+const PLANET_HEADING = document.querySelector("#description-heading");
+const PLANET_P = document.querySelector("#description-paragraph");
+const PLANET_DISTANCE = document.querySelector("#distance");
+const PLANET_TIME = document.querySelector("#time");
 
 
 
-descriptionButtons.forEach((button, i) => {
+DESCRIPTION_BTNS.forEach((button, i) => {
   button.addEventListener("click", () => {
-    planetPicture.src = DESTINATIONS[i].images.png;
-    planetHeading.innerText = DESTINATIONS[i].name;
-    planetParagraph.innerText = DESTINATIONS[i].description;
-    planetDistance.innerText = DESTINATIONS[i].distance;
-    planetTime.innerText = DESTINATIONS[i].travel;
+    PLANET_PICTURE.src = DESTINATIONS[i].images.png;
+    PLANET_HEADING.innerText = DESTINATIONS[i].name;
+    PLANET_P.innerText = DESTINATIONS[i].description;
+    PLANET_DISTANCE.innerText = DESTINATIONS[i].distance;
+    PLANET_TIME.innerText = DESTINATIONS[i].travel;
   })
 });
 
