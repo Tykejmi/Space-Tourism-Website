@@ -3,7 +3,7 @@
 ![page-header](imgs/githubImg.png)
 
 ## Description 
-This is multipa-page info page for fake space travelling company. 
+This is multi-page info page for fake space travelling company. 
 
 ## Features
 - Fully responsive
