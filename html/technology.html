@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/technology.css" />
   </head>
   <body>
-    <div class="content-wrap">
+    <div class="outer-wrap">
       <header>
         <nav>
           <a class="logo-anchor" href="../index.html">
@@ -43,14 +43,26 @@
         <h2 class="multipage-heading"><span>03</span>space launch 101</h2>
         <div class="description">
           <ul class="btns">
-            <li class="btn">1</li>
-            <li class="btn">2</li>
-            <li class="btn">3</li>
+            <li>
+              <button type="button" aria-label="change content" class="btn">
+                1
+              </button>
+            </li>
+            <li>
+              <button type="button" aria-label="change content" class="btn">
+                2
+              </button>
+            </li>
+            <li>
+              <button type="button" aria-label="change content" class="btn">
+                3
+              </button>
+            </li>
           </ul>
           <div class="description-text">
             <h4 id="description-text-h4">The terminology</h4>
-            <h2 id="description-text-h2">Launch vehicle</h2>
-            <p id="description-text-p">
+            <h2 description-text-h2>Launch vehicle</h2>
+            <p description-text-p class="description-text-p">
               A launch vehicle or carrier rocket is a rocket-propelled vehicle
               used to carry a payload from Earth's surface to space, usually to
               Earth orbit or beyond. Our WEB-X carrier rocket is the most
@@ -59,12 +71,13 @@
             </p>
           </div>
         </div>
-
-        <img
-          class="description-img"
-          src="../imgs/technology/image-launch-vehicle-portrait.jpg"
-          alt=""
-        />
+        <div class="img-wrap">
+          <img
+            class="description-img"
+            src="../imgs/technology/image-launch-vehicle-portrait.jpg"
+            alt=""
+          />
+        </div>
       </main>
     </div>
     <script src="../js/technology.js"></script>

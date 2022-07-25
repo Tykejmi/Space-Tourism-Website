@@ -46,11 +46,11 @@ const DESTINATIONS = [
 ];
 
 const DESCRIPTION_BTNS = document.querySelectorAll(".description-button");
-const PLANET_PICTURE = document.querySelector("#planet-picture");
-const PLANET_HEADING = document.querySelector("#description-heading");
-const PLANET_P = document.querySelector("#description-paragraph");
-const PLANET_DISTANCE = document.querySelector("#distance");
-const PLANET_TIME = document.querySelector("#time");
+const PLANET_PICTURE = document.querySelector("[planet-picture]");
+const PLANET_HEADING = document.querySelector("[description-heading]");
+const PLANET_P = document.querySelector("[description-paragraph]");
+const PLANET_DISTANCE = document.querySelector("[distance]");
+const PLANET_TIME = document.querySelector("[time]");
 
 
 

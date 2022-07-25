@@ -30,8 +30,8 @@ const TECHNOLOGY = [
 
 const BTNS = document.querySelectorAll(".btn");
 const DESCRIPTION_IMG = document.querySelector(".description-img");
-const DESCRIPTION_H2 = document.querySelector("#description-text-h2");
-const DESCRIPTION_P = document.querySelector("#description-text-p");
+const DESCRIPTION_H2 = document.querySelector("[description-text-h2]");
+const DESCRIPTION_P = document.querySelector("[description-text-p]");
 
 
 

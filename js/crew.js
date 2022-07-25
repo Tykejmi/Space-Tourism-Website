@@ -38,10 +38,10 @@ const CREW = [
 ];
 
 const BTNS = document.querySelectorAll(".description-button");
-const DESCRIPTION_TITLE = document.querySelector("#description-title");
-const DESCRIPTION_NAME = document.querySelector("#description-name");
-const DESCRIPTION_P = document.querySelector("#description-paragraph");
-const MEMBER_PHOTO = document.querySelector("#member-photo");
+const DESCRIPTION_TITLE = document.querySelector("[description-title]");
+const DESCRIPTION_NAME = document.querySelector("[description-name]");
+const DESCRIPTION_P = document.querySelector("[description-paragraph]");
+const MEMBER_PHOTO = document.querySelector("[member-photo]");
 
 BTNS.forEach((button, i) => {
   button.addEventListener("click", () => {

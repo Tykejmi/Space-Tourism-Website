@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/destination.css" />
   </head>
   <body>
-    <div class="content-wrap">
+    <div class="outer-wrap">
       <header>
         <nav>
           <a class="logo-anchor" href="../index.html">
@@ -42,20 +42,52 @@
       <main>
         <h2 class="multipage-heading"><span>01</span>pick your destination</h2>
         <img
-          id="planet-picture"
+          planet-picture
           src="../imgs/destination/image-moon.png"
           alt="europa"
         />
 
         <section class="description">
           <ul>
-            <li class="description-button">moon</li>
-            <li class="description-button">mars</li>
-            <li class="description-button">europa</li>
-            <li class="description-button">titan</li>
+            <li>
+              <button
+                type="button"
+                aria-label="change content"
+                class="description-button"
+              >
+                moon
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                aria-label="change content"
+                class="description-button"
+              >
+                mars
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                aria-label="change content"
+                class="description-button"
+              >
+                europa
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                aria-label="change content"
+                class="description-button"
+              >
+                titan
+              </button>
+            </li>
           </ul>
-          <h2 id="description-heading">Moon</h2>
-          <p id="description-paragraph">
+          <h2 description-heading>Moon</h2>
+          <p class="description-paragraph" description-paragraph>
             See our planet as you’ve never seen it before. A perfect relaxing
             trip away to help regain perspective and come back refreshed. While
             you’re there, take in some history by visiting the Luna 2 and Apollo
@@ -64,11 +96,11 @@
           <div class="description-values">
             <div class="description-values-value">
               <h4>Avg. distance</h4>
-              <p id="distance">384,400 km</p>
+              <p distance>384,400 km</p>
             </div>
             <div class="description-values-value">
               <h4>est. travel time</h4>
-              <p id="time">3 days</p>
+              <p time>3 days</p>
             </div>
           </div>
         </section>

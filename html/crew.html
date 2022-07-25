@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/crew.css" />
   </head>
   <body>
-    <div class="content-wrap">
+    <div class="outer-wrap">
       <header>
         <nav>
           <a class="logo-anchor" href="../index.html">
@@ -42,23 +42,54 @@
       <main>
         <h2 class="multipage-heading"><span>02</span>meet the crew</h2>
         <section class="description">
-          <h2 id="description-title">commander</h2>
-          <h2 id="description-name">Douglas Hurley</h2>
-          <p id="description-paragraph">
+          <h2 description-title class="description-title">commander</h2>
+          <h2 description-name class="description-name">Douglas Hurley</h2>
+          <p description-paragraph class="description-paragraph">
             Douglas Gerald Hurley is an American engineer, former Marine Corps
             pilot and former NASA astronaut. He launched into space for the
             third time as commander of Crew Dragon Demo-2.
           </p>
         </section>
         <ul>
-          <li class="description-button btn-active"></li>
-          <li class="description-button"></li>
-          <li class="description-button"></li>
-          <li class="description-button"></li>
+          <li>
+            <button
+            type="button"
+            aria-label="change content"
+            class="description-button btn-active"
+          >  </button>
+          </li>
+          
+      
+          <li>
+            <button
+              type="button"
+              aria-label="change content"
+              class="description-button"
+            >
+          </li>
+          <li>
+            </button>
+            <button
+            type="button"
+            aria-label="change content"
+            class="description-button"
+          >
+       
+          </button>
+        </li>
+          <li>
+          <button
+          type="button"
+          aria-label="change content"
+          class="description-button"
+        >
+        </button>
+          </li>
+  
         </ul>
         <div class="img-container">
           <img
-            id="member-photo"
+            member-photo
             src="../imgs/crew/image-douglas-hurley.png"
             alt=""
           />
